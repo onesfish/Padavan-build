@@ -94,14 +94,14 @@ jobs:
         #格式如下：
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_DOGCOM/d'
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_MINIEAP/d'
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT/d'
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_NAPT66/d'
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_NANO/d'
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER/d'
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT/d'
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD/d'
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_DOGCOM/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_MINIEAP/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_NAPT66/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_NANO/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD/d' .config
 
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> .config
