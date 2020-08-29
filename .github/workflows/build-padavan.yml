@@ -96,19 +96,14 @@ jobs:
         #echo "自定义项=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_DOGCOM/d'
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config
-        
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MINIEAP/d'
         echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> .config
-        
         sed -i '/CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT/d'
         echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> .config
-        
         sed -i '/CONFIG_FIRMWARE_INCLUDE_NAPT66/d'
         echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=n" >> .config
-        
         sed -i '/CONFIG_FIRMWARE_INCLUDE_NANO/d'
         echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >> .config
-        
         sed -i '/CONFIG_FIRMWARE_INCLUDE_NANO/d'
         echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >> .config
         #########################################################################################
