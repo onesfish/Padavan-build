@@ -107,6 +107,8 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_VLMCSD/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_XUPNPD/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOCAT/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_LRZSZ/d' .config
 
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config #去除用于 Drcom 的工具
         echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> .config #去除可用于锐捷的 eap 客户端
@@ -121,6 +123,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >> .config #去除用于 KMS 的工具
         echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> .config #去除用于 IPTV 的 XUPNP
         echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=n" >> .config 
+        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n" >> .config 
+        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> .config 
         #########################################################################################
         sudo ./clear_tree
         sudo ./build_firmware_modify $TNAME 0
